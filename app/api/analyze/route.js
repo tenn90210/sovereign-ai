@@ -108,6 +108,7 @@ export async function POST(req) {
       model: process.env.OPENAI_MODEL || "gpt-5.6",
       instructions: SYSTEM,
       input: `
+      Return the response as valid JSON.
 MODE:
 ${mode}
 
